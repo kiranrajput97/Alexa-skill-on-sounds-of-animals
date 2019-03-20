@@ -1,0 +1,118 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sound of animals",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel this skill",
+                        "cancel it",
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help me here",
+                        "help me",
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop this skill",
+                        "stop it",
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": [
+                        "navigate to home",
+                        "navigate"
+                    ]
+                },
+                {
+                    "name": "PlayNameIntent",
+                    "slots": [
+                        {
+                            "name": "animal",
+                            "type": "ANIMAL"
+                        },
+                        {
+                            "name": "pitch",
+                            "type": "PITCH"
+                        }
+                    ],
+                    "samples": [
+                        "play a sound of {animal}",
+                        "{animal} with {pitch} sound",
+                        "sound of {animal} with {pitch}",
+                        "{pitch} sound of {animal}",
+                        "{animal} sound with {pitch}",
+                        "{animal} sound"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "ANIMAL",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "donkey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "horse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dog"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wolf"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tiger"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lion"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "PITCH",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "high"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "low"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
